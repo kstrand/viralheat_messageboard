@@ -1,17 +1,10 @@
 VhMessageboard::Application.routes.draw do
  
-  #get "posts/new"
-
-  #get "posts/create"
-
-  #get "posts/show"
-
   resources :posts
 
   devise_for :users
 
-
-  root to: "home#index"
+  root to: "posts#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,1 +1,13 @@
-<h1> Posts <h1>
+<h1>All the Posts</h1>
+<div> make a new <%= link_to "post", new_post_path %></div><br /> 
+<table>
+  <% current_user.posts.each do |post| %>
+    <tr>
+      <th>this is the post: <%= post.title %> </th>
+    </tr>
+    <tr>
+      <th>this is the user ID: <%= post.user_id %></th>
+    </tr>
+  <% end %>
+</table>
+
