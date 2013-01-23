@@ -2,7 +2,7 @@
 <table class="table table-striped">
   <% current_user.posts.each do |post| %>
     <tr>
-      <th>this is the post: <%= post.title %> </th>
+      <th><%= post.title %> </th>
     </tr>
     <tr>
       <th>posted <%= post.created_at%>  by <%= current_user.email %></th>
