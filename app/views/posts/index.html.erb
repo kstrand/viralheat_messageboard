@@ -1,13 +1,13 @@
-<h1>All the Posts</h1>
-<div> make a new <%= link_to "post", new_post_path %></div><br /> 
-<table>
+<h1>Posts</h1>
+<table class="table table-striped">
   <% current_user.posts.each do |post| %>
     <tr>
       <th>this is the post: <%= post.title %> </th>
     </tr>
     <tr>
-      <th>this is the user ID: <%= post.user_id %></th>
+      <th>posted <%= post.created_at%>  by <%= current_user.email %></th>
     </tr>
+    <tr>
   <% end %>
 </table>
 

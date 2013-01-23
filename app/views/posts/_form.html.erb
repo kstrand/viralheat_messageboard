@@ -11,15 +11,15 @@
   </div>
   <% end %>
  
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
+  <div id="title" class="column">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+   <div id="name" class="column" > 
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+    <div id="message" class="column">
     <%= f.label :message %><br />
     <%= f.text_area :message %>
   </div>
