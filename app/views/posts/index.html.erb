@@ -5,7 +5,10 @@
       <th><%= post.title %> </th>
     </tr>
     <tr>
-      <th>posted <%= post.created_at%>  by <%= current_user.email %></th>
+      <td><%= post.message %>  </td>
+    </tr>
+    <tr>
+      <td>posted <%= post.created_at%>  by <%= current_user.email %></td>
     </tr>
     <tr>
   <% end %>

@@ -21,3 +21,7 @@ label {
  width: 100px;
  padding: 0px;
 }
+
+.navbar-right {
+    float: right;
+}

@@ -16,7 +16,8 @@
       <li class="active"><a href="/">Home</a></li>
       <li><%= link_to "make a new post", new_post_path %></li>
      </ul>
-  <% if user_signed_in? %>
+     <% if user_signed_in? %>
+     <div class="navbar-right">
     Logged in as <strong><%= current_user.email %></strong>.
      <%= link_to 'Edit profile', edit_user_registration_path %> |
      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
@@ -25,6 +26,7 @@
      <%= link_to "Login", new_user_session_path %>
  <% end %>
  </div>
+</div>
 </div>
     <%= yield %>
 </body>
